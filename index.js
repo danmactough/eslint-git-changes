@@ -24,7 +24,16 @@ module.exports = function (options) {
   let files;
 
   if (diffIndex.status === 0) {
-    const jsExtensionRegex = /^\.(?:js|json|jsx)$/i;
+    let extensions = [
+      'js'
+    ];
+    if (options.json) {
+      extensions.push('json');
+    }
+    if (options.jsx) {
+      extensions.push('jsx');
+    }
+    const jsExtensionRegex = new RegExp(`^\.(?:${extensions.join('|')})$`, 'i');
     files = diffIndex.stdout.split('\n').filter(file => {
       const extension = extname(file);
       return jsExtensionRegex.test(extension);
