@@ -10,10 +10,10 @@
   "author": "Dan MacTough <danmactough@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "yargs": "^4.7.1"
+    "yargs": "^6.5.0"
   },
   "devDependencies": {
-    "eslint": "^2.13.1",
+    "eslint": "^3.12.2",
     "eslint-plugin-json": "^1.2.0"
   }
 }
