@@ -74,7 +74,7 @@ function listStagedFiles (diffIndexOptions, cb) {
 }
 
 function lintFiles (files) {
-  var child = spawn('eslint', files, { encoding: 'utf8', stdio: 'inherit' });
+  var child = spawn('eslint', files, { encoding: 'utf8', shell: true, stdio: 'inherit' });
   child.on('close', function (code) {
     process.exit(code);
   });
