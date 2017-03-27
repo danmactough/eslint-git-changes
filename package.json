@@ -1,6 +1,6 @@
 {
   "name": "eslint-git-changes",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Run eslint on added and modified javascript/json/jsx files in your git working tree",
   "main": "index.js",
   "bin": "bin/eslint-git-changes",
