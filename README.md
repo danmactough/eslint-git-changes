@@ -1,4 +1,6 @@
 # eslint-git-changes
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/danmactough/eslint-git-changes.svg)](https://greenkeeper.io/)
 Run eslint on added and modified javascript/json/jsx files in your git working tree
 
 ## Usage
