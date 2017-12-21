@@ -34,7 +34,7 @@ module.exports = function (options, done) {
         extensions.push('jsx');
       }
 
-      var jsExtensionRegex = new RegExp('^\.(?:' + extensions.join('|') + ')$', 'i');
+      var jsExtensionRegex = new RegExp('^\\.(?:' + extensions.join('|') + ')$', 'i');
 
       files = stagedFiles.filter(function (file) {
         var extension = extname(file);
