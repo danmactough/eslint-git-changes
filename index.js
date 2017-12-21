@@ -44,6 +44,9 @@ module.exports = function (options, done) {
       // If we found any files to check, run eslint on them
       // otherwise, just exit -- nothing to do
       if (files.length > 0) {
+        if (options.json) {
+          files.unshift('--plugin json');
+        }
         lintFiles(files);
       }
       else {
